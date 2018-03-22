@@ -1,0 +1,122 @@
+section.intro {
+    .intro-head {
+        h1 {
+            font-family: $font2;
+            letter-spacing: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+			margin-bottom: 0.5rem;
+
+            @include media(min, sm) {
+                font-size: 1.8rem;
+            }
+            @include media(min, md) {
+                font-size: 2.2rem;
+				margin-bottom: 0;
+            }
+        }
+        h2 {
+            font-weight: bold;
+            color: rgb(189, 177, 167);
+			margin-bottom: 0;
+			font-size: 1rem;
+
+            @include media(min, lg) {
+                font-size: 1.2rem;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 2rem;
+			margin-bottom: 0;
+        }
+        h4 {
+            font-size: 1rem;
+            font-weight: bold;
+            color: rgb(189, 177, 167);
+			margin-bottom: 0;
+        }
+        @include media(min, xl) {
+            h1 {
+                font-size: 2.9rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 2.5rem;
+            }
+
+        }
+    }
+    .intro-content {
+
+        section {
+            padding: 0;
+        }
+
+        padding-top: 1rem;
+        img {
+            object-fit: cover;
+            height: 150px;
+            width: 100%;
+            @include media(min, md) {
+                height: 250px;
+            }
+        }
+
+        .col-tr {
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 100px 100px;
+            margin-top: 1rem;
+            @include media(min, lg) {
+                background-size: 150px 150px;
+                margin-top: 0;
+            }
+            .col-tr-content {
+                font-style: italic;
+                @include media(min, sm) {
+                    padding-bottom: 1rem;
+                }
+                @include media(min, lg) {
+                    padding-bottom: 0;
+                }
+                h3 {
+                    font-weight: bold;
+                    @include media(min, xl) {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+        .col-bl {
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 100px 100px;
+            margin-bottom: 1rem;
+            @include media(min, lg) {
+                background-size: 150px 150px;
+                margin-bottom: 0;
+            }
+            .col-bl-content {
+                text-align: center;
+                h3 {
+                    color: rgb(189, 177, 167);
+                    font-weight: 400;
+                    @include media(min, xl) {
+                        font-size: 1.8rem;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+                @include media(min, lg) {
+                    text-align: right;
+                    padding-right: 2rem;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+}

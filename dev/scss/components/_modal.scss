@@ -1,0 +1,63 @@
+.fancybox-content {
+    .fancybox-text {
+        text-align: center;
+        padding: 1rem;
+        background-color: rgba(220, 215, 211, 0.5);
+        top: 0;
+        @include media(min, md) {
+            padding: 3rem;
+        }
+        @include media(min, xl) {
+            height: 100%;
+            position: absolute;
+        }
+        .fancybox-text-border {
+            height: 100%;
+            border: 1px solid;
+            padding: 1rem;
+            background-color: white;
+            margin-top: -100px;
+			max-height: 100%;
+			overflow-y: auto;
+            @include media(min, md) {
+                margin-top: -200px;
+            }
+            @include media(min, lg) {
+                margin-top: -300px;
+            }
+            h1 {
+                font-family: $font2;
+                letter-spacing: 4px;
+                color: rgb(189, 177, 167);
+                text-transform: uppercase;
+            }
+            @include media(min, xl) {
+                background-color: rgba(220, 215, 211, 0.6);
+                margin-top: 0;
+                h1 {
+                    color: black;
+                }
+            }
+        }
+        .modal-btn-nav {
+			display: block;
+			z-index: 99999;
+			position: relative;
+			@include media(min,sm){
+				display: flex;
+				justify-content: center;
+			}
+            a {
+                font-family: $font2;
+                background-color: rgb(35, 34, 33);
+                color: white;
+                text-transform: uppercase;
+                margin-top: -1.5rem;
+				@include media(min,sm){
+					font-size: 1.5rem;
+					padding: 0 2rem;
+				}
+            }
+        }
+    }
+}

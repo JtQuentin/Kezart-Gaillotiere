@@ -1,0 +1,69 @@
+section.banniere {
+    padding-top: 0;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+        @include media(min, xl) {
+            height: 700px;
+        }
+    }
+}
+
+.banner {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    .banner-head,
+    .banner-end {
+        p, a {
+            text-transform: uppercase;
+            padding: 0.5em 2rem;
+            @include media(min, lg) {
+                padding: 0.5rem 3rem;
+            }
+        }
+    }
+    .banner-head {
+        p {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-bottom: 0;
+        }
+    }
+    .banner-content {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+		padding: 1rem;
+        h1 {
+			line-height: 3.5rem;
+            font-family: $font2;
+            font-size: 3.5rem;
+            padding: 1.5rem;
+            margin-bottom: 0;
+            @include media(min, lg) {
+                font-size: 4.5rem;
+            }
+        }
+        p {
+			line-height: 1.2rem;
+            font-family: $font2;
+            font-size: 1.2rem;
+            color: rgb(220, 215, 211);
+
+        }
+    }
+    .banner-end {
+        a {
+            background-color: rgba(247, 247, 247, 0.9);
+            text-decoration: underline;
+            color: rgb(189, 177, 167);
+
+			&:hover {
+				color: #000
+			}
+        }
+    }
+}

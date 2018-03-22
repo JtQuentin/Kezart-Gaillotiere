@@ -1,0 +1,30 @@
+section#contactez-nous {
+    .infos-img {
+        img {
+            width: 100%;
+        }
+    }
+    .formulaire {
+        p:first-child {
+            margin-bottom: 0;
+            color: rgb(189, 177, 167);
+            font-size: 1.2rem;
+        }
+    }
+    .infos {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        .media-left {
+            height: 24px;
+            width: 24px;
+            svg {
+                margin-right: 1rem;
+            }
+        }
+    }
+    #map {
+        height: 500px;
+        width: 100%;
+    }
+}

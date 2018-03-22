@@ -1,0 +1,60 @@
+.title-hide > .acf-label {
+	display: none;
+}
+#menu-repeater .acf-table {
+    border: none;
+    border-bottom: #DFDFDF solid 1px;
+    border-right: #DFDFDF solid 1px;
+}
+#menu-repeater .acf-row {
+	width: 50% !important;
+    display: block;
+    float: left;
+	position: relative;
+    border-top: #E1E1E1 solid 1px;
+}
+
+#menu-repeater .acf-row:nth-last-child(2):nth-child(odd) {
+    border-right: #DFDFDF solid 1px;
+}
+
+
+#menu-repeater .acf-row:nth-last-child(3):nth-child(even) {
+	 border-bottom: #DFDFDF solid 1px;
+}
+
+#menu-repeater .acf-fields {
+	display: block !important;
+	width: calc(100% - 1px) !important;
+    border-width: 1px 0 0 1px;
+}
+
+#menu-repeater .acf-repeater .acf-row-handle.order {
+    border: none;
+    border-right: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+}
+
+#menu-repeater .acf-repeater .acf-row-handle.remove {
+    background: 0 0;
+    border: none;
+    display: block;
+    height: 20px;
+    position: absolute;
+    width: auto;
+    top: 0;
+    padding: 8px;
+    margin: 0;
+    right: 0;
+}
+
+#menu-repeater .acf-repeater .acf-row-handle .acf-icon,
+#menu-repeater .acf-repeater .acf-row-handle .acf-icon.-minus {
+
+    padding: 0;
+    margin: 0;
+    top: 0;
+    display: inline-block;
+    position: relative;
+
+}

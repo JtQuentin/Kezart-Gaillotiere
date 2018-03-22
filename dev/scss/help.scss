@@ -1,0 +1,158 @@
+// ---------------- MEDIA QUERY ---------------- //
+// media($param1, $param2)
+// $param1 : media min/max-width (min, max)
+// $param2 : breakpoint (xs, sm, md, lg, xl ou valeur)
+// -------------------------------------------- //
+
+.media {
+    color: blue;
+    @include media(min, xs) {
+        color: red;
+    }
+}
+
+/* Resulat
+
+.media {
+    color: #blue
+}
+
+@media screen and (min-width:472px) {
+    .media {
+        color: red
+    }
+}
+
+*/
+// ------------------ BUTTON ------------------ //
+// button($param1, $param2, $param3)
+// $param1 : couleur du fond
+// $param2 : couleur de la typo
+// $param3 : couleur du border
+// -------------------------------------------- //
+
+.button {
+    @include button(#d9619a, white, #d9619a);
+}
+
+/* Resulat
+
+.block {
+    background: #d9619a;
+    color: #fff;
+    border-color: #cf3880
+}
+
+.block:hover {
+    background: #cf3880;
+    color: #fff;
+    border-color: #d9619a
+}
+
+*/
+// ----------------- Clearfix ----------------- //
+// -------------------------------------------- //
+
+.clearfix {
+    @include clearfix;
+}
+
+/* Resulat
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+*/
+// --------------- Center-vertical -------------- //
+// -------------------------------------------- //
+
+.center-vertical {
+    @include center-vertical;
+
+}
+
+/* Resulat
+
+.center-vertical {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+*/
+
+// ----------------- TRIANGLE ----------------- //
+// triangle($param1, $param2, $param3)
+// $param1 : Orientation de la fleche (up,down,left,right)
+// $param2 : taille du triangle (px, rem ect)
+// $param3 : couleur du triangle
+// -------------------------------------------- //
+
+.triangle {
+    &:before {
+        @include triangle(down, 5rem, red);
+    }
+}
+
+/* Resulat
+
+.triangle:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 5rem solid red;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent
+}
+*/
+
+// ----------------- FONT FACE ----------------- //
+// font-face($param1, $param2, $param3, $param4)
+// $param1 : Nommer la typo
+// $param2 : Nom du fichier (sans extention)
+// $param3 : font-weight ( numerique / bold etc)
+// $param4 : font-style (normal/italic)
+// -------------------------------------------- //
+
+@include font-face(Nom, fichier, 200, normal);
+
+/* Resulat
+
+@font-face {
+    font-family: Nom;
+    src: url(../fonts/fichier.eot);
+    src: url(../fonts/fichier.eot?#iefix) format("embedded-opentype"), url(../fonts/fichier.woff2) format("woff2"), url(../fonts/fichier.woff) format("woff"), url(../fonts/fichier.ttf) format("truetype"), url(../fonts/fichier.svg#typo) format("svg");
+    font-weight: 200;
+    font-style: normal
+}
+
+*/
+// ------------------- FONT -------------------- //
+// font($param1, $param2)
+// $param1 : nom de la typo ou variables-fonts
+// $param2 : fonts-size valeur(px, rem ect)
+// $param3 : font-weight ( numerique / bold etc)
+// $param4 : line-height valeur(px, rem ect)
+// -------------------------------------------- //
+
+
+.font {
+    @include font("TypoRound", .5rem);
+    // @include font($font-primary, $font-smaller);
+}
+
+/* Resulat
+
+.font {
+    font-family: TypoRound;
+    font-size: .5rem
+}
+
+*/

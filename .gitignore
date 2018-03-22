@@ -1,0 +1,11 @@
+settings.json
+package-lock.json
+.DS_Store
+node_modules/*
+wordpress/*
+!wordpress/wp-config.php
+dev/zekario/assets/
+!wordpress/wp-content/
+wordpress/wp-content/*
+!wordpress/wp-content/plugins
+!wordpress/wp-content/uploads

@@ -1,0 +1,35 @@
+// Media Query
+$breakpoints: (
+    xs: 472px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+// Fonts
+$font1: 'Open Sans', sans-serif;
+$font2: 'Open Sans Condensed', sans-serif;
+
+// Fonts-Size
+$fs-h1 : 2rem;
+$fs-h2 : 1.5rem;
+$fs-h3 : 1.3rem;
+$fs-h4 : 1.2rem;
+$fs-p : 1rem;
+$fs-small : .7rem;
+$fs-medium : 1rem;
+$fs-large : 3rem;
+
+// Color
+$color1: #36365c;
+$color2: #231d2f;
+$color3: #41312b;
+
+
+// Nav
+$nav-color : #626466;
+$nav-hover-color : #626466;
+$nav-line-color: #626466;
+$nav-line-height : 4px; // limit max 7
+$nav-line-height-hover : -($nav-line-height / 2);

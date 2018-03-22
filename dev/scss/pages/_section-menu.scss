@@ -1,0 +1,154 @@
+section#nos-plats-menus {
+    @include media(min, lg) {
+        li:not(:first-child) {
+            h1 {
+                a:before {
+                    content: '-';
+                    margin-left: -1rem;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+	.tab-content{
+		margin-top: 1rem;
+	}
+    .nav-menu {
+        h1 {
+			margin-bottom: 0;
+            a {
+                font-family: 'Open Sans Condensed', sans-serif;
+                color: black;
+                font-size: 1rem;
+                text-transform: uppercase;
+                @include media(min, md) {
+                    font-size: 1.7rem;
+                }
+                @include media(min, lg) {
+					letter-spacing: 5px;
+                    font-size: 2rem;
+                }
+            }
+        }
+        &:last-child {
+            h1 {
+                a {
+                    color: rgb(189, 68, 70);
+                }
+            }
+        }
+		.nav-link{
+			padding: 0.5rem 0.3rem;
+			@include media(min,md){
+				padding: 0.5rem	1.5rem;
+			}
+		}
+        .nav-link.active:after {
+			content: "";
+			height: 0.5rem;
+			width: 100%;
+			background: #000;
+			display: block;
+        }
+    }
+    .col-menu {
+        margin-bottom: 1rem;
+        .bordure {
+            border: solid rgb(189, 177, 167);
+            .menu-titre {
+                h1 {
+                    font-family: $font2;
+                    background-color: rgb(189, 177, 167);
+                    padding: 0 1.5rem;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+
+        }
+    }
+    .col-menu-salade-marche {
+        margin-bottom: 0;
+    }
+    .menu-content,
+    .carte-content {
+        h1 {
+            font-size: 2rem;
+            color: rgb(189, 177, 167);
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: rgb(82, 75, 68);
+        }
+        @include media(min, xl) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .carte-head {
+        margin-top: 2rem;
+    }
+    .carte-titre {
+        h1 {
+            font-family: $font2;
+            background-color: rgb(35, 34, 33);
+            color: white;
+            padding: 0 3rem;
+            margin-bottom: -1rem;
+            margin-top: -1rem;
+            text-transform: uppercase;
+            align-self: center;
+            font-size: 1.5rem;
+        }
+    }
+
+    .carte-content {
+        background-color: rgb(220, 215, 211);
+        border: 1px solid rgb(220, 215, 211);
+        padding: 0 1rem;
+        p:nth-child(1) {
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+        p:nth-child(2) {
+            margin-top: 0;
+        }
+    }
+    .col-menu-img {
+        display: none;
+        @include media(min, xl) {
+            display: inline;
+        }
+        img {
+            @include media(min, xl) {
+                height: 230px;
+                width: 230px;
+            }
+        }
+    }
+    .col-droite {
+        padding-left: 0;
+        padding-right: 0;
+        @include media(min, md) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .menu-droite {
+            margin-top: 1rem;
+            @include media(min, lg) {
+                margin-top: 2rem;
+            }
+            img {
+                object-fit: cover;
+                height: 150px;
+                width: 100%;
+            }
+        }
+    }
+}

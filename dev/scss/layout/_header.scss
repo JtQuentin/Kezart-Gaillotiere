@@ -1,0 +1,49 @@
+header{
+
+   .logo {
+
+        width: 100px;
+
+        @include media(min, lg) {
+            width: 250px;
+        }
+    }
+
+    .social {
+        margin-bottom: 0;
+
+        li {
+            text-align: center;
+
+            &:not(last-child) {
+                margin: 10px 2.5px;
+            }
+
+            &:last-child {
+                @include media(min, lg) {
+                    margin-right: 10px;
+                }
+            }
+
+            a {
+				color: #706f6f;
+                display: block;
+                font-size: $fs-small;
+                line-height: 23px;
+                width: 25px;
+                height: 25px;
+                border: #706f6f 1px solid;
+                border-radius: 50%;
+                text-decoration: none;
+
+                &:hover{
+					color: #000;
+                    border-color: darken(#706f6f, 20%);
+                }
+            }
+
+        }
+
+    }
+
+}

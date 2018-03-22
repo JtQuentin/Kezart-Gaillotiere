@@ -1,0 +1,89 @@
+section#nos-gites {
+    .gites-liste {
+        img {
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+        }
+        .description {
+            background-color: rgb(220, 215, 211);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            .gites-description {
+				padding: 1rem;
+                p:first-child {
+                    margin-top: 2rem;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                    font-size: 1.2rem;
+                }
+                p:nth-child(2) {
+                    margin-top: 0;
+                }
+                a {
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                    color: black;
+                }
+            }
+        }
+    }
+    .gites-titre {
+        h1 {
+            font-family: $font2;
+            background-color: rgb(35, 34, 33);
+            color: white;
+            padding: 0 3rem;
+            margin-bottom: -1rem;
+            margin-top: -1rem;
+            text-transform: uppercase;
+            align-self: center;
+            font-size: 1.5rem;
+        }
+    }
+
+    .gites-content {
+        h2 {
+            color: rgb(189, 177, 167);
+            font-size: 1.2rem;
+        }
+
+        p:last-child {
+
+            @include media(min, sm) {
+                margin-bottom: 0;
+            }
+        }
+
+        .logos {
+            margin: auto;
+            .logo-gites-de-france {
+
+                margin-right: 1rem;
+
+                @include media(min, sm) {
+                    margin-right: 0rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            img {
+                @include media(min, sm) {
+                    height: 75px;
+                    width: 75px;
+                }
+            }
+        }
+
+    }
+
+    .imglist {
+        margin-top: 1rem;
+        a {
+            height: 150px;
+            width: 200px;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+}

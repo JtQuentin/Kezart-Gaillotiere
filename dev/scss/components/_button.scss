@@ -1,0 +1,36 @@
+.button {
+
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    height: 40px;
+    line-height: 40px;
+    border-width: 0;
+    cursor: pointer;
+
+    &-rose {
+        @include button(#d35490, white);
+    }
+
+    &-orange {
+        @include button(#f2b649, white);
+    }
+
+    &-grey {
+        @include button(#444544, white);
+    }
+
+    &-white {
+        @include button(#ffffff, #e64954);
+    }
+
+    &-peach {
+        @include button(#ebceba, black);
+    }
+
+    &-green {
+        @include button(#04a099, white);
+    }
+
+}
+

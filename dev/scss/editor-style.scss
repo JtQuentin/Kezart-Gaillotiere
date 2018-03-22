@@ -1,0 +1,47 @@
+/* # Import config */
+@import 'variables.scss';
+
+/* # Import mixins */
+@import 'mixins.scss';
+
+/* # Import fonts */
+@import 'fonts.scss';
+
+/* # Import button */
+@import 'components/button.scss';
+
+h1 {
+    @include font($font1)
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+del {
+    text-decoration: line-through;
+}

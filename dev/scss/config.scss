@@ -1,0 +1,15 @@
+// Grid
+.row.gutter--min > [class^="col-"],
+.row.gutter--min > [class^=" col-"] {
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
+
+.fs-h1 { font-size: $fs-h1 }
+.fs-h2 { font-size: $fs-h2 }
+.fs-h3 { font-size: $fs-h3 }
+.fs-h4 { font-size: $fs-h4 }
+.fs-p  { font-size: $fs-p }
+.fs-small { font-size: $fs-small }
+.fs-medium { font-size: $fs-medium }
+.fs-large { font-size: $fs-large }

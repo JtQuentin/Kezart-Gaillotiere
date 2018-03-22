@@ -1,0 +1,10 @@
+@media print {
+    body{
+        -webkit-print-color-adjust: exact;
+    }
+
+    [class^="col-"] {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
